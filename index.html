@@ -10,22 +10,35 @@
                 background-color: whitesmoke;
                 color: DarkSlateGray;
         	}
+            
     	nav {
         		text-align:center;
+                padding-top:10px;
+                padding-bottom:10px;
             }
+            
         .bttn{
         		margin:5px;
              }
+             
     	a:hover.bttn {
         		background-color:darkgray;
                 padding:2px;
                 }
+                
       header {
       			text-align:center;
              }
+             
       header h1{
       			font-size:40px;
                 }
+      img {
+      			display:block;
+                margin: 0 auto;
+                border-radius: 100%;
+                padding-top: 10px;
+      		}
       			
     </style>
 </head>
@@ -34,9 +47,9 @@
     	<a href="#top" class="bttn"><button>Welcome!</button></a>
       <a href="#about" class="bttn"><button>About Me</button></a>
       <a href="#hobbies" class="bttn"><button>Hobbies</button></a>
-    <hr>
   </nav>
 	<header id="top">
+    	 <hr>
     	<h1>Margaret Kellogg</h1>
 		<h2>Website Developer</h2>
 		<hr>
@@ -44,12 +57,14 @@
     <main>
     	<img height=50%; width=50%; aria-labledby="image of Margaret Kellogg"  
    alt="headshot of a blond woman"    src="https://res.cloudinary.com/margaretkellogg/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1692827053/Professional_Photo_sdhg2r.jpg">
-        <div id="about">
+        <section id="about" aria-labledby="written information about the author">
         <br>
-        	<h2>About Me!</h2>
- 
+        	<h2>About Me</h2>
+            <p>I graduated from William Smith College with a degree in Religious Studies.  While attending I travled abroad in Mexico and later in India.  I worked for five years for the New York State DMV, helping people to retrieve certified copies of their government documents.  I then attended CNW School of Massage Therapy.</p>
+ 			<p>I am currently in a program with York Solutions B2E Program. One website which I refer to often is <b>W3Schools</b>.  You can visit it too at: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
+            <br>
         	<hr>
-        </div>
+        </section>
         <div aria-labledby="this section describes my hobbies" id="hobbies">
         	<h2>Hobbies</h2>
             <h3>Crocheting</h3>
@@ -58,6 +73,10 @@
             <p>I enjoy volunteering for candidates and nonprofits I support.</p>
             <br>
         </div>
+       
+    </main>
+</body>
+</html>
        
     </main>
 </body>
